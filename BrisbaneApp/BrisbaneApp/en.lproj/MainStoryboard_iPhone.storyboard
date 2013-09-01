@@ -1,111 +1,140 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2837" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="358-0b-vMB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1921"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier First View Controller - First-->
-        <scene sceneID="11">
-            <objects>
-                <viewController title="First" id="2" customClass="FirstViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="16">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="20">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="21">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="Ikv-jk-tyi"/>
-                                </constraints>
-                                <string key="text">Loaded by the first view controller — an instance of FirstViewController — specified in the app delegate.</string>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="21" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="QBg-X6-fBV"/>
-                            <constraint firstAttribute="trailing" secondItem="20" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Qxj-1L-2Yh"/>
-                            <constraint firstItem="20" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ty9-wx-CyI"/>
-                            <constraint firstItem="21" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Zmm-k2-2L7"/>
-                            <constraint firstItem="21" firstAttribute="top" secondItem="20" secondAttribute="bottom" constant="40" type="user" id="jX0-Wi-kmb"/>
-                            <constraint firstAttribute="centerY" secondItem="21" secondAttribute="centerY" type="user" id="yWk-L2-m9F"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="7"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="653" y="-138"/>
-        </scene>
-        <!--class Prefix:identifier Second View Controller - Second-->
-        <scene sceneID="13">
-            <objects>
-                <viewController title="Second" id="3" customClass="SecondViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="17">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="22">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="23">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="cQR-IW-sY8"/>
-                                </constraints>
-                                <string key="text">Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate.</string>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="22" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="0q6-IA-e8m"/>
-                            <constraint firstAttribute="trailing" secondItem="23" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="fR4-wH-Ih7"/>
-                            <constraint firstItem="23" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fzb-YA-SeR"/>
-                            <constraint firstAttribute="centerY" secondItem="23" secondAttribute="centerY" type="user" id="llH-eD-iPS"/>
-                            <constraint firstAttribute="trailing" secondItem="22" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="pc3-9Y-W42"/>
-                            <constraint firstItem="23" firstAttribute="top" secondItem="22" secondAttribute="bottom" constant="40" type="user" id="yUx-Ee-KEk"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="653" y="498"/>
-        </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="15">
+        <scene sceneID="O7K-d3-Kbm">
             <objects>
-                <tabBarController id="4" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                <tabBarController definesPresentationContext="YES" id="358-0b-vMB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LCr-mR-69J"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="cJn-yL-hHL">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
-                        <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
+                        <segue destination="lI6-5J-MDP" kind="relationship" relationship="viewControllers" id="fYE-Do-nZL"/>
+                        <segue destination="3vo-cT-BED" kind="relationship" relationship="viewControllers" id="lmS-FN-nre"/>
+                        <segue destination="5jN-gA-Ymb" kind="relationship" relationship="viewControllers" id="vCb-C8-Fxv"/>
+                        <segue destination="yk7-vw-FyW" kind="relationship" relationship="viewControllers" id="Gb4-k4-IVv"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UcD-XF-DUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="180"/>
+            <point key="canvasLocation" x="-242" y="-817"/>
+        </scene>
+        <!--View Controller - Night Life-->
+        <scene sceneID="l6y-Ka-DwD">
+            <objects>
+                <viewController title="Night Life" id="lI6-5J-MDP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G56-dt-8Q4">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Texture.png" translatesAutoresizingMaskIntoConstraints="NO" id="R05-ey-39h"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R05-ey-39h" firstAttribute="bottom" secondItem="G56-dt-8Q4" secondAttribute="bottom" type="default" id="8Kk-cM-JL0"/>
+                            <constraint firstItem="R05-ey-39h" firstAttribute="top" secondItem="G56-dt-8Q4" secondAttribute="top" type="default" id="CTF-9k-UkU"/>
+                            <constraint firstItem="R05-ey-39h" firstAttribute="trailing" secondItem="G56-dt-8Q4" secondAttribute="trailing" type="default" id="Duy-mE-Tyt"/>
+                            <constraint firstItem="R05-ey-39h" firstAttribute="leading" secondItem="G56-dt-8Q4" secondAttribute="leading" type="default" id="TWo-bR-XzV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Night Life" image="star32.png" id="urx-rY-ENl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JhP-Z9-b0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247" y="-1342"/>
+        </scene>
+        <!--View Controller - What's On-->
+        <scene sceneID="Le2-ex-J7j">
+            <objects>
+                <viewController title="What's On" id="3vo-cT-BED" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kpk-Ex-gpb">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Texture.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zkm-uq-v51"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zkm-uq-v51" firstAttribute="top" secondItem="Kpk-Ex-gpb" secondAttribute="top" type="default" id="5Nd-Ap-FDr"/>
+                            <constraint firstItem="Zkm-uq-v51" firstAttribute="leading" secondItem="Kpk-Ex-gpb" secondAttribute="leading" type="default" id="8Wa-Y7-7D6"/>
+                            <constraint firstItem="Zkm-uq-v51" firstAttribute="bottom" secondItem="Kpk-Ex-gpb" secondAttribute="bottom" type="default" id="D0b-xH-9to"/>
+                            <constraint firstItem="Zkm-uq-v51" firstAttribute="trailing" secondItem="Kpk-Ex-gpb" secondAttribute="trailing" type="default" id="Oql-yQ-g9A"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="What's On" image="melody32.png" id="uz4-tQ-8Dp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wa7-dr-xnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="791" y="-1018"/>
+        </scene>
+        <!--View Controller - Shopping-->
+        <scene sceneID="K8U-OD-KNc">
+            <objects>
+                <viewController id="yk7-vw-FyW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EhJ-xy-MUg">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Texture.png" translatesAutoresizingMaskIntoConstraints="NO" id="cOT-cU-pym"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cOT-cU-pym" firstAttribute="trailing" secondItem="EhJ-xy-MUg" secondAttribute="trailing" type="default" id="5c1-OF-kKu"/>
+                            <constraint firstItem="cOT-cU-pym" firstAttribute="bottom" secondItem="EhJ-xy-MUg" secondAttribute="bottom" type="default" id="KzH-LE-c0L"/>
+                            <constraint firstItem="cOT-cU-pym" firstAttribute="top" secondItem="EhJ-xy-MUg" secondAttribute="top" type="default" id="QE2-bi-pbC"/>
+                            <constraint firstItem="cOT-cU-pym" firstAttribute="leading" secondItem="EhJ-xy-MUg" secondAttribute="leading" type="default" id="zyq-vu-kDI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shopping" image="bag32.png" id="7cl-jM-tcX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FcF-sG-WCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197" y="-29"/>
+        </scene>
+        <!--View Controller - Eating-->
+        <scene sceneID="aCj-5Y-WRz">
+            <objects>
+                <viewController title="Eating" id="5jN-gA-Ymb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I8X-96-cyg">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Texture.png" translatesAutoresizingMaskIntoConstraints="NO" id="y7W-Xl-6sn"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y7W-Xl-6sn" firstAttribute="top" secondItem="I8X-96-cyg" secondAttribute="top" type="default" id="FsN-Gl-G0N"/>
+                            <constraint firstItem="y7W-Xl-6sn" firstAttribute="leading" secondItem="I8X-96-cyg" secondAttribute="leading" type="default" id="NkT-ez-xyt"/>
+                            <constraint firstItem="y7W-Xl-6sn" firstAttribute="trailing" secondItem="I8X-96-cyg" secondAttribute="trailing" type="default" id="tAs-nI-ohV"/>
+                            <constraint firstItem="y7W-Xl-6sn" firstAttribute="bottom" secondItem="I8X-96-cyg" secondAttribute="bottom" type="default" id="ypy-St-dje"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Eating" image="cup32.png" id="97I-z4-OtP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NlW-Po-s5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="-358"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="16" height="16"/>
-        <image name="second" width="16" height="16"/>
+        <image name="Texture.png" width="640" height="960"/>
+        <image name="bag32.png" width="32" height="32"/>
+        <image name="cup32.png" width="32" height="32"/>
+        <image name="melody32.png" width="32" height="32"/>
+        <image name="star32.png" width="32" height="32"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

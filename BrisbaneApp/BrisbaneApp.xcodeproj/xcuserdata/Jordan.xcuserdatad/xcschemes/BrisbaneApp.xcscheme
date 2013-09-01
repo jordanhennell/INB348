@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1797858817D1801300251CF3"
+               BlueprintIdentifier = "1724124C17D35A8B00E43946"
                BuildableName = "BrisbaneApp.app"
                BlueprintName = "BrisbaneApp"
                ReferencedContainer = "container:BrisbaneApp.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "179785BC17D1801400251CF3"
+               BlueprintIdentifier = "1724127517D35A8C00E43946"
                BuildableName = "BrisbaneAppTests.octest"
                BlueprintName = "BrisbaneAppTests"
                ReferencedContainer = "container:BrisbaneApp.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1797858817D1801300251CF3"
+            BlueprintIdentifier = "1724124C17D35A8B00E43946"
             BuildableName = "BrisbaneApp.app"
             BlueprintName = "BrisbaneApp"
             ReferencedContainer = "container:BrisbaneApp.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1797858817D1801300251CF3"
+            BlueprintIdentifier = "1724124C17D35A8B00E43946"
             BuildableName = "BrisbaneApp.app"
             BlueprintName = "BrisbaneApp"
             ReferencedContainer = "container:BrisbaneApp.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1797858817D1801300251CF3"
+            BlueprintIdentifier = "1724124C17D35A8B00E43946"
             BuildableName = "BrisbaneApp.app"
             BlueprintName = "BrisbaneApp"
             ReferencedContainer = "container:BrisbaneApp.xcodeproj">
