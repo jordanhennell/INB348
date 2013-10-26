@@ -14,11 +14,20 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    /* test mobile service data connection when app is run */
+    
+    // connect to data
     MSClient *client = [MSClient clientWithApplicationURLString:@"https://outgoer.azure-mobile.net/"
                                                  applicationKey:@"BPROLfBPRfbbmpYgCGUKxlnIREkmfe83"];
     
-    NSDictionary *item = @{ @"text" : @"Awesome item" };
+    // create item to be added, id is automatically generated and cannot be manually changed
+    NSDictionary *item = @{ @"firstColumn" : @"firstItem", // "firstItem" will be added to the column "firstColumn"
+                            @"secondColumn" : @"secondItem" };
+    
+    // get instance of table to be inserted into: "Item"
     MSTable *itemTable = [client tableWithName:@"Item"];
+    
+    // insert item into table, included log entries
     [itemTable insert:item completion:^(NSDictionary *insertedItem, NSError *error) {
         if (error) {
             NSLog(@"Error: %@", error);
