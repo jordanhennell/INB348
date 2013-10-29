@@ -12,13 +12,18 @@
 		03D1002216EC579A0005A1A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D1002116EC579A0005A1A9 /* CoreGraphics.framework */; };
 		03D1002816EC579A0005A1A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03D1002616EC579A0005A1A9 /* InfoPlist.strings */; };
 		03D1002A16EC579A0005A1A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D1002916EC579A0005A1A9 /* main.m */; };
+		03D1002E16EC579A0005A1A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D1002D16EC579A0005A1A9 /* AppDelegate.m */; };
+		03D1004716EC58300005A1A9 /* QSTodoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D1004616EC58300005A1A9 /* QSTodoListViewController.m */; };
+		03D1004A16EC58490005A1A9 /* QSTodoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D1004916EC58490005A1A9 /* QSTodoService.m */; };
 		03D1004D16EC5A680005A1A9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D1004B16EC5A680005A1A9 /* MainStoryboard_iPhone.storyboard */; };
 		03D1006016EC63620005A1A9 /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D1005F16EC63620005A1A9 /* WindowsAzureMobileServices.framework */; };
-		175A3500181B5F1C00651458 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 175A34FF181B5F1C00651458 /* Default.png */; };
-		175A3502181B5FA200651458 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 175A3501181B5FA200651458 /* Default@2x.png */; };
-		175A3504181B5FB600651458 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 175A3503181B5FB600651458 /* Default-568h@2x.png */; };
-		175A3509181B64B500651458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 175A3506181B64B500651458 /* AppDelegate.m */; };
-		175A350A181B64B500651458 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 175A3508181B64B500651458 /* ViewController.m */; };
+		03D1006516ED41D20005A1A9 /* connected57.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D1006116ED41D20005A1A9 /* connected57.png */; };
+		03D1006616ED41D20005A1A9 /* connected72.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D1006216ED41D20005A1A9 /* connected72.png */; };
+		03D1006716ED41D20005A1A9 /* connected114.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D1006316ED41D20005A1A9 /* connected114.png */; };
+		03D1006816ED41D20005A1A9 /* connected144.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D1006416ED41D20005A1A9 /* connected144.png */; };
+		17802E34181FCE1B00C2D101 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17802E31181FCE1A00C2D101 /* Default-568h@2x.png */; };
+		17802E35181FCE1B00C2D101 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 17802E32181FCE1A00C2D101 /* Default.png */; };
+		17802E36181FCE1B00C2D101 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17802E33181FCE1B00C2D101 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,15 +35,21 @@
 		03D1002716EC579A0005A1A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		03D1002916EC579A0005A1A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		03D1002B16EC579A0005A1A9 /* OutGoer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OutGoer-Prefix.pch"; sourceTree = "<group>"; };
+		03D1002C16EC579A0005A1A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		03D1002D16EC579A0005A1A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		03D1004516EC58300005A1A9 /* QSTodoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSTodoListViewController.h; sourceTree = "<group>"; };
+		03D1004616EC58300005A1A9 /* QSTodoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSTodoListViewController.m; sourceTree = "<group>"; };
+		03D1004816EC58490005A1A9 /* QSTodoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSTodoService.h; sourceTree = "<group>"; };
+		03D1004916EC58490005A1A9 /* QSTodoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSTodoService.m; sourceTree = "<group>"; };
 		03D1004B16EC5A680005A1A9 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		03D1005F16EC63620005A1A9 /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
-		175A34FF181B5F1C00651458 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		175A3501181B5FA200651458 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		175A3503181B5FB600651458 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		175A3505181B64B500651458 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		175A3506181B64B500651458 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		175A3507181B64B500651458 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		175A3508181B64B500651458 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		03D1006116ED41D20005A1A9 /* connected57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected57.png; sourceTree = "<group>"; };
+		03D1006216ED41D20005A1A9 /* connected72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected72.png; sourceTree = "<group>"; };
+		03D1006316ED41D20005A1A9 /* connected114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected114.png; sourceTree = "<group>"; };
+		03D1006416ED41D20005A1A9 /* connected144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected144.png; sourceTree = "<group>"; };
+		17802E31181FCE1A00C2D101 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		17802E32181FCE1A00C2D101 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		17802E33181FCE1B00C2D101 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +70,6 @@
 		03D1001116EC579A0005A1A9 = {
 			isa = PBXGroup;
 			children = (
-				175A3503181B5FB600651458 /* Default-568h@2x.png */,
-				175A3501181B5FA200651458 /* Default@2x.png */,
-				175A34FF181B5F1C00651458 /* Default.png */,
 				03D1002316EC579A0005A1A9 /* OutGoer */,
 				03D1001C16EC579A0005A1A9 /* Frameworks */,
 				03D1001B16EC579A0005A1A9 /* Products */,
@@ -90,11 +98,13 @@
 		03D1002316EC579A0005A1A9 /* OutGoer */ = {
 			isa = PBXGroup;
 			children = (
-				175A3505181B64B500651458 /* AppDelegate.h */,
-				175A3506181B64B500651458 /* AppDelegate.m */,
-				175A3507181B64B500651458 /* ViewController.h */,
-				175A3508181B64B500651458 /* ViewController.m */,
+				03D1004816EC58490005A1A9 /* QSTodoService.h */,
+				03D1004916EC58490005A1A9 /* QSTodoService.m */,
+				03D1004516EC58300005A1A9 /* QSTodoListViewController.h */,
+				03D1004616EC58300005A1A9 /* QSTodoListViewController.m */,
 				03D1004B16EC5A680005A1A9 /* MainStoryboard_iPhone.storyboard */,
+				03D1002C16EC579A0005A1A9 /* AppDelegate.h */,
+				03D1002D16EC579A0005A1A9 /* AppDelegate.m */,
 				03D1002416EC579A0005A1A9 /* Supporting Files */,
 			);
 			path = OutGoer;
@@ -103,6 +113,13 @@
 		03D1002416EC579A0005A1A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				17802E31181FCE1A00C2D101 /* Default-568h@2x.png */,
+				17802E32181FCE1A00C2D101 /* Default.png */,
+				17802E33181FCE1B00C2D101 /* Default@2x.png */,
+				03D1006116ED41D20005A1A9 /* connected57.png */,
+				03D1006216ED41D20005A1A9 /* connected72.png */,
+				03D1006316ED41D20005A1A9 /* connected114.png */,
+				03D1006416ED41D20005A1A9 /* connected144.png */,
 				03D1002516EC579A0005A1A9 /* OutGoer-Info.plist */,
 				03D1002616EC579A0005A1A9 /* InfoPlist.strings */,
 				03D1002916EC579A0005A1A9 /* main.m */,
@@ -141,7 +158,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = MobileServices;
 			};
-			buildConfigurationList = 03D1001516EC579A0005A1A9 /* Build configuration list for PBXProject "OutGoer" */;
+			buildConfigurationList = 03D1001516EC579A0005A1A9 /* Build configuration list for PBXProject "OutGoerq" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -165,9 +182,13 @@
 			files = (
 				03D1002816EC579A0005A1A9 /* InfoPlist.strings in Resources */,
 				03D1004D16EC5A680005A1A9 /* MainStoryboard_iPhone.storyboard in Resources */,
-				175A3500181B5F1C00651458 /* Default.png in Resources */,
-				175A3502181B5FA200651458 /* Default@2x.png in Resources */,
-				175A3504181B5FB600651458 /* Default-568h@2x.png in Resources */,
+				03D1006516ED41D20005A1A9 /* connected57.png in Resources */,
+				03D1006616ED41D20005A1A9 /* connected72.png in Resources */,
+				03D1006716ED41D20005A1A9 /* connected114.png in Resources */,
+				03D1006816ED41D20005A1A9 /* connected144.png in Resources */,
+				17802E34181FCE1B00C2D101 /* Default-568h@2x.png in Resources */,
+				17802E35181FCE1B00C2D101 /* Default.png in Resources */,
+				17802E36181FCE1B00C2D101 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,8 +200,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D1002A16EC579A0005A1A9 /* main.m in Sources */,
-				175A3509181B64B500651458 /* AppDelegate.m in Sources */,
-				175A350A181B64B500651458 /* ViewController.m in Sources */,
+				03D1002E16EC579A0005A1A9 /* AppDelegate.m in Sources */,
+				03D1004716EC58300005A1A9 /* QSTodoListViewController.m in Sources */,
+				03D1004A16EC58490005A1A9 /* QSTodoService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +290,6 @@
 				INFOPLIST_FILE = "OutGoer/OutGoer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -285,7 +306,6 @@
 				INFOPLIST_FILE = "OutGoer/OutGoer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -293,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03D1001516EC579A0005A1A9 /* Build configuration list for PBXProject "OutGoer" */ = {
+		03D1001516EC579A0005A1A9 /* Build configuration list for PBXProject "OutGoerq" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03D1003E16EC579A0005A1A9 /* Debug */,

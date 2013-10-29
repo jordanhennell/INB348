@@ -1,9 +1,8 @@
 //
 //  AppDelegate.h
-//  OutGoer
+//  Outgoer
 //
-//  Created by Jordan on 1/09/13.
-//  Copyright (c) 2013 Jordan. All rights reserved.
+//  Copyright (c) 2013 Jordan Hennell & Braydon Cohn. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

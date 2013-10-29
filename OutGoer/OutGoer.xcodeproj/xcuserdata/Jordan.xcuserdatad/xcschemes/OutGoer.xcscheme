@@ -17,7 +17,7 @@
                BlueprintIdentifier = "03D1001916EC579A0005A1A9"
                BuildableName = "OutGoer.app"
                BlueprintName = "OutGoer"
-               ReferencedContainer = "container:OutGoer.xcodeproj">
+               ReferencedContainer = "container:OutGoerq.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "03D1001916EC579A0005A1A9"
             BuildableName = "OutGoer.app"
             BlueprintName = "OutGoer"
-            ReferencedContainer = "container:OutGoer.xcodeproj">
+            ReferencedContainer = "container:OutGoerq.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -54,7 +54,7 @@
             BlueprintIdentifier = "03D1001916EC579A0005A1A9"
             BuildableName = "OutGoer.app"
             BlueprintName = "OutGoer"
-            ReferencedContainer = "container:OutGoer.xcodeproj">
+            ReferencedContainer = "container:OutGoerq.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -72,7 +72,7 @@
             BlueprintIdentifier = "03D1001916EC579A0005A1A9"
             BuildableName = "OutGoer.app"
             BlueprintName = "OutGoer"
-            ReferencedContainer = "container:OutGoer.xcodeproj">
+            ReferencedContainer = "container:OutGoerq.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
