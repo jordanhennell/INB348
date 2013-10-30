@@ -13,7 +13,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
+// ============================================================================
 // Modified by Jordan Hennell & Braydon Cohn For INB348 - QUT
+// ============================================================================
 
 #import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 #import <Foundation/Foundation.h>
@@ -22,32 +24,34 @@
 #pragma mark * Block Definitions
 
 
-typedef void (^QSCompletionBlock) ();
-typedef void (^QSCompletionWithIndexBlock) (NSUInteger index);
-typedef void (^QSBusyUpdateBlock) (BOOL busy);
+typedef void (^CompletionBlock) ();
+typedef void (^CompletionWithIndexBlock) (NSUInteger index);
+typedef void (^BusyUpdateBlock) (BOOL busy);
 
 
 #pragma mark * TodoService public interface
 
 
-@interface QSTodoService : NSObject
+@interface OutGoerService : NSObject
 
-@property (nonatomic, strong)   NSArray *items;
-@property (nonatomic, strong)   MSClient *client;
-@property (nonatomic, copy)     QSBusyUpdateBlock busyUpdate;
+@property (nonatomic, strong)   NSArray         *items;
+@property (nonatomic, strong)   MSClient        *client;
+@property (nonatomic, copy)     BusyUpdateBlock busyUpdate;
 
-+ (QSTodoService *)defaultService;
++ (OutGoerService *)defaultService;
 
-- (void)refreshDataOnSuccess:(QSCompletionBlock)completion;
++ (OutGoerService *)customService: (NSString*)tableName;
 
-- (void)refreshDataOnSuccess:(QSCompletionBlock)completion
+- (void)refreshDataOnSuccess:(CompletionBlock)completion;
+
+- (void)refreshDataOnSuccess:(CompletionBlock)completion
                withPredicate:(NSPredicate *)predicate;
 
 - (void)addItem:(NSDictionary *)item
-     completion:(QSCompletionWithIndexBlock)completion;
+     completion:(CompletionWithIndexBlock)completion;
 
 - (void)completeItem:(NSDictionary *)item
-          completion:(QSCompletionWithIndexBlock)completion;
+          completion:(CompletionWithIndexBlock)completion;
 
 
 - (void)handleRequest:(NSURLRequest *)request

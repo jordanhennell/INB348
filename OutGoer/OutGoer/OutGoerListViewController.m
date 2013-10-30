@@ -13,20 +13,22 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
+// ============================================================================
 // Modified by Jordan Hennell & Braydon Cohn For INB348 - QUT
+// ============================================================================
 
 #import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
-#import "QSTodoListViewController.h"
-#import "QSTodoService.h"
+#import "OutGoerListViewController.h"
+#import "OutGoerService.h"
 
 
 #pragma mark * Private Interface
 
 
-@interface QSTodoListViewController ()
+@interface OutGoerListViewController ()
 
 // Private properties
-@property (strong, nonatomic)   QSTodoService   *todoService;
+@property (strong, nonatomic)   OutGoerService   *todoService;
 @property (nonatomic)           BOOL            useRefreshControl;
 
 @end
@@ -35,7 +37,7 @@
 #pragma mark * Implementation
 
 
-@implementation QSTodoListViewController
+@implementation OutGoerListViewController
 
 @synthesize todoService;
 @synthesize itemText;
@@ -50,7 +52,7 @@
     [super viewDidLoad];
     
     // Create the todoService - this creates the Mobile Service client inside the wrapped service
-    self.todoService = [QSTodoService defaultService];
+    self.todoService = [OutGoerService customService:@"Posts"];
     
     // Set the busy method
     UIActivityIndicatorView *indicator = self.activityIndicator;
@@ -79,17 +81,14 @@
         [self.refreshControl beginRefreshing];
     }
     
-    // Create a predicate that finds items where complete is false
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"complete == NO"];
-    
+    // get all items in table, no predicate
     [self.todoService refreshDataOnSuccess:^
     {
         if (self.useRefreshControl == YES) {
             [self.refreshControl endRefreshing];
         }
         [self.tableView reloadData];
-    }
-                             withPredicate:predicate];
+    }];
 }
 
 

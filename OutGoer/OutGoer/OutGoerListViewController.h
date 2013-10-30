@@ -13,11 +13,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
+// ============================================================================
 // Modified by Jordan Hennell & Braydon Cohn For INB348 - QUT
+// ============================================================================
 
 #import <UIKit/UIKit.h>
 
-@interface QSTodoListViewController : UITableViewController
+@interface OutGoerListViewController : UITableViewController
 
 @property (weak, nonatomic) IBOutlet UITextField                *itemText;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView    *activityIndicator;
