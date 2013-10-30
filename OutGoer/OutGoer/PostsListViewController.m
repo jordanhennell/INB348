@@ -29,7 +29,10 @@
 
 // Private properties
 @property (strong, nonatomic)   OutGoerService   *outGoerService;
+
 @property (nonatomic)           BOOL            useRefreshControl;
+
+@property (strong, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
@@ -245,4 +248,8 @@
 }
 
 
+- (void)viewDidUnload {
+    [self setTextView:nil];
+    [super viewDidUnload];
+}
 @end

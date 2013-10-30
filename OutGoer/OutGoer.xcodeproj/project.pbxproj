@@ -21,9 +21,15 @@
 		03D1006616ED41D20005A1A9 /* connected72.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D1006216ED41D20005A1A9 /* connected72.png */; };
 		03D1006716ED41D20005A1A9 /* connected114.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D1006316ED41D20005A1A9 /* connected114.png */; };
 		03D1006816ED41D20005A1A9 /* connected144.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D1006416ED41D20005A1A9 /* connected144.png */; };
+		172235F9182152A200BA128A /* CreatePost.png in Resources */ = {isa = PBXBuildFile; fileRef = 172235F5182152A200BA128A /* CreatePost.png */; };
+		172235FA182152A200BA128A /* ButtonTransparentBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 172235F6182152A200BA128A /* ButtonTransparentBlack.png */; };
+		172235FB182152A200BA128A /* ButtonTransparentRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 172235F7182152A200BA128A /* ButtonTransparentRed.png */; };
+		172235FC182152A200BA128A /* ButtonTransparentWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 172235F8182152A200BA128A /* ButtonTransparentWhite.png */; };
 		17802E34181FCE1B00C2D101 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17802E31181FCE1A00C2D101 /* Default-568h@2x.png */; };
 		17802E35181FCE1B00C2D101 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 17802E32181FCE1A00C2D101 /* Default.png */; };
 		17802E36181FCE1B00C2D101 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17802E33181FCE1B00C2D101 /* Default@2x.png */; };
+		17B44A3C18210FEA00B4B1EB /* CreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B44A3B18210FEA00B4B1EB /* CreatePostViewController.m */; };
+		17B9CA551820ED34004F832A /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B9CA541820ED34004F832A /* Background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +53,16 @@
 		03D1006216ED41D20005A1A9 /* connected72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected72.png; sourceTree = "<group>"; };
 		03D1006316ED41D20005A1A9 /* connected114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected114.png; sourceTree = "<group>"; };
 		03D1006416ED41D20005A1A9 /* connected144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected144.png; sourceTree = "<group>"; };
+		172235F5182152A200BA128A /* CreatePost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreatePost.png; sourceTree = "<group>"; };
+		172235F6182152A200BA128A /* ButtonTransparentBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonTransparentBlack.png; sourceTree = "<group>"; };
+		172235F7182152A200BA128A /* ButtonTransparentRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonTransparentRed.png; sourceTree = "<group>"; };
+		172235F8182152A200BA128A /* ButtonTransparentWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonTransparentWhite.png; sourceTree = "<group>"; };
 		17802E31181FCE1A00C2D101 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		17802E32181FCE1A00C2D101 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		17802E33181FCE1B00C2D101 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		17B44A3A18210FEA00B4B1EB /* CreatePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePostViewController.h; sourceTree = "<group>"; };
+		17B44A3B18210FEA00B4B1EB /* CreatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatePostViewController.m; sourceTree = "<group>"; };
+		17B9CA541820ED34004F832A /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +113,8 @@
 			children = (
 				03D1004816EC58490005A1A9 /* OutGoerService.h */,
 				03D1004916EC58490005A1A9 /* OutGoerService.m */,
+				17B44A3A18210FEA00B4B1EB /* CreatePostViewController.h */,
+				17B44A3B18210FEA00B4B1EB /* CreatePostViewController.m */,
 				03D1004516EC58300005A1A9 /* PostsListViewController.h */,
 				03D1004616EC58300005A1A9 /* PostsListViewController.m */,
 				03D1004B16EC5A680005A1A9 /* MainStoryboard_iPhone.storyboard */,
@@ -113,19 +128,32 @@
 		03D1002416EC579A0005A1A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				17802E31181FCE1A00C2D101 /* Default-568h@2x.png */,
-				17802E32181FCE1A00C2D101 /* Default.png */,
-				17802E33181FCE1B00C2D101 /* Default@2x.png */,
-				03D1006116ED41D20005A1A9 /* connected57.png */,
-				03D1006216ED41D20005A1A9 /* connected72.png */,
-				03D1006316ED41D20005A1A9 /* connected114.png */,
-				03D1006416ED41D20005A1A9 /* connected144.png */,
+				1721EBCE1820EEEF00C4C793 /* Images */,
 				03D1002516EC579A0005A1A9 /* OutGoer-Info.plist */,
 				03D1002616EC579A0005A1A9 /* InfoPlist.strings */,
 				03D1002916EC579A0005A1A9 /* main.m */,
 				03D1002B16EC579A0005A1A9 /* OutGoer-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1721EBCE1820EEEF00C4C793 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				172235F5182152A200BA128A /* CreatePost.png */,
+				172235F6182152A200BA128A /* ButtonTransparentBlack.png */,
+				172235F7182152A200BA128A /* ButtonTransparentRed.png */,
+				172235F8182152A200BA128A /* ButtonTransparentWhite.png */,
+				03D1006416ED41D20005A1A9 /* connected144.png */,
+				03D1006316ED41D20005A1A9 /* connected114.png */,
+				03D1006216ED41D20005A1A9 /* connected72.png */,
+				03D1006116ED41D20005A1A9 /* connected57.png */,
+				17802E32181FCE1A00C2D101 /* Default.png */,
+				17802E33181FCE1B00C2D101 /* Default@2x.png */,
+				17B9CA541820ED34004F832A /* Background.png */,
+				17802E31181FCE1A00C2D101 /* Default-568h@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +217,11 @@
 				17802E34181FCE1B00C2D101 /* Default-568h@2x.png in Resources */,
 				17802E35181FCE1B00C2D101 /* Default.png in Resources */,
 				17802E36181FCE1B00C2D101 /* Default@2x.png in Resources */,
+				17B9CA551820ED34004F832A /* Background.png in Resources */,
+				172235F9182152A200BA128A /* CreatePost.png in Resources */,
+				172235FA182152A200BA128A /* ButtonTransparentBlack.png in Resources */,
+				172235FB182152A200BA128A /* ButtonTransparentRed.png in Resources */,
+				172235FC182152A200BA128A /* ButtonTransparentWhite.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +236,7 @@
 				03D1002E16EC579A0005A1A9 /* AppDelegate.m in Sources */,
 				03D1004716EC58300005A1A9 /* PostsListViewController.m in Sources */,
 				03D1004A16EC58490005A1A9 /* OutGoerService.m in Sources */,
+				17B44A3C18210FEA00B4B1EB /* CreatePostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
