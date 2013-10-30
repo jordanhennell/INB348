@@ -18,17 +18,17 @@
 // ============================================================================
 
 #import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
-#import "OutGoerListViewController.h"
+#import "PostsListViewController.h"
 #import "OutGoerService.h"
 
 
 #pragma mark * Private Interface
 
 
-@interface OutGoerListViewController ()
+@interface PostsListViewController ()
 
 // Private properties
-@property (strong, nonatomic)   OutGoerService   *todoService;
+@property (strong, nonatomic)   OutGoerService   *outGoerService;
 @property (nonatomic)           BOOL            useRefreshControl;
 
 @end
@@ -37,9 +37,9 @@
 #pragma mark * Implementation
 
 
-@implementation OutGoerListViewController
+@implementation PostsListViewController
 
-@synthesize todoService;
+@synthesize outGoerService;
 @synthesize itemText;
 @synthesize activityIndicator;
 
@@ -50,13 +50,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+     
+    [self setUpService:@"Posts"];
+}
+
+/**
+ * sets up service for data connection, based on name of table
+ */
+- (void) setUpService: (NSString*)tableName
+{
     // Create the todoService - this creates the Mobile Service client inside the wrapped service
-    self.todoService = [OutGoerService customService:@"Posts"];
+    self.outGoerService = [OutGoerService customService:tableName];
     
     // Set the busy method
     UIActivityIndicatorView *indicator = self.activityIndicator;
-    self.todoService.busyUpdate = ^(BOOL busy)
+    self.outGoerService.busyUpdate = ^(BOOL busy)
     {
         if (busy)
         {
@@ -74,6 +82,7 @@
     [self refresh];
 }
 
+
 - (void) refresh
 {
     // only activate the refresh control if the feature is available
@@ -82,7 +91,7 @@
     }
     
     // get all items in table, no predicate
-    [self.todoService refreshDataOnSuccess:^
+    [self.outGoerService refreshDataOnSuccess:^
     {
         if (self.useRefreshControl == YES) {
             [self.refreshControl endRefreshing];
@@ -99,14 +108,14 @@
  forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Find item that was commited for editing (completed)
-    NSDictionary *item = [self.todoService.items objectAtIndex:indexPath.row];
+    NSDictionary *item = [self.outGoerService.items objectAtIndex:indexPath.row];
     
     // Change the appearance to look greyed out until we remove the item
     UILabel *label = (UILabel *)[[tableView cellForRowAtIndexPath:indexPath] viewWithTag:1];
     label.textColor = [UIColor grayColor];
     
     // Ask the todoService to set the item's complete value to YES, and remove the row if successful
-    [self.todoService completeItem:item completion:^(NSUInteger index)
+    [self.outGoerService completeItem:item completion:^(NSUInteger index)
     {  
         // Remove the row from the UITableView
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
@@ -118,7 +127,7 @@
 -(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Find the item that is about to be edited
-    NSDictionary *item = [self.todoService.items objectAtIndex:indexPath.row];
+    NSDictionary *item = [self.outGoerService.items objectAtIndex:indexPath.row];
     
     // If the item is complete, then this is just pending upload. Editing is not allowed
     if ([[item objectForKey:@"complete"] boolValue])
@@ -149,7 +158,7 @@
     // has been reused and was previously greyed out
     UILabel *label = (UILabel *)[cell viewWithTag:1];
     label.textColor = [UIColor blackColor];
-    NSDictionary *item = [self.todoService.items objectAtIndex:indexPath.row];
+    NSDictionary *item = [self.outGoerService.items objectAtIndex:indexPath.row];
     label.text = [item objectForKey:@"text"];
     
     return cell;
@@ -164,7 +173,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of items in the todoService items array
-    return [self.todoService.items count];
+    return [self.outGoerService.items count];
 }
 
 
@@ -199,7 +208,7 @@
     UITableView *view = self.tableView;
     
     // add item to table on Azure, as well as table view
-    [self.todoService addItem:item completion:^(NSUInteger index)
+    [self.outGoerService addItem:item completion:^(NSUInteger index)
     {
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
         [view insertRowsAtIndexPaths:@[ indexPath ]

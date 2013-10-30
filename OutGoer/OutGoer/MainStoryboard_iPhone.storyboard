@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Out Goer List View Controller-->
+        <!--Posts List View Controller-->
         <scene sceneID="cCY-SB-wT5">
             <objects>
-                <tableViewController id="PsD-7a-zsW" customClass="OutGoerListViewController" sceneMemberID="viewController">
+                <tableViewController id="PsD-7a-zsW" customClass="PostsListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="lJ7-Ej-a4P">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="162" y="64"/>
         </scene>
-        <!--Out Goer List View Controller-->
+        <!--Posts List View Controller-->
         <scene sceneID="0ui-M5-WA7">
             <objects>
-                <viewController id="FFJ-x3-rEM" customClass="OutGoerListViewController" sceneMemberID="viewController">
+                <viewController id="FFJ-x3-rEM" customClass="PostsListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="XKm-q1-tuX">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

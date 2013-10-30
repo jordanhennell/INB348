@@ -19,7 +19,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OutGoerListViewController : UITableViewController
+@interface PostsListViewController : UITableViewController
 
 @property (weak, nonatomic) IBOutlet UITextField                *itemText;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView    *activityIndicator;

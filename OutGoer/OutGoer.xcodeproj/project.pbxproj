@@ -13,7 +13,7 @@
 		03D1002816EC579A0005A1A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03D1002616EC579A0005A1A9 /* InfoPlist.strings */; };
 		03D1002A16EC579A0005A1A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D1002916EC579A0005A1A9 /* main.m */; };
 		03D1002E16EC579A0005A1A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D1002D16EC579A0005A1A9 /* AppDelegate.m */; };
-		03D1004716EC58300005A1A9 /* OutGoerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D1004616EC58300005A1A9 /* OutGoerListViewController.m */; };
+		03D1004716EC58300005A1A9 /* PostsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D1004616EC58300005A1A9 /* PostsListViewController.m */; };
 		03D1004A16EC58490005A1A9 /* OutGoerService.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D1004916EC58490005A1A9 /* OutGoerService.m */; };
 		03D1004D16EC5A680005A1A9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D1004B16EC5A680005A1A9 /* MainStoryboard_iPhone.storyboard */; };
 		03D1006016EC63620005A1A9 /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D1005F16EC63620005A1A9 /* WindowsAzureMobileServices.framework */; };
@@ -37,8 +37,8 @@
 		03D1002B16EC579A0005A1A9 /* OutGoer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OutGoer-Prefix.pch"; sourceTree = "<group>"; };
 		03D1002C16EC579A0005A1A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03D1002D16EC579A0005A1A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		03D1004516EC58300005A1A9 /* OutGoerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutGoerListViewController.h; sourceTree = "<group>"; };
-		03D1004616EC58300005A1A9 /* OutGoerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutGoerListViewController.m; sourceTree = "<group>"; };
+		03D1004516EC58300005A1A9 /* PostsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsListViewController.h; sourceTree = "<group>"; };
+		03D1004616EC58300005A1A9 /* PostsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsListViewController.m; sourceTree = "<group>"; };
 		03D1004816EC58490005A1A9 /* OutGoerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutGoerService.h; sourceTree = "<group>"; };
 		03D1004916EC58490005A1A9 /* OutGoerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutGoerService.m; sourceTree = "<group>"; };
 		03D1004B16EC5A680005A1A9 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
@@ -100,8 +100,8 @@
 			children = (
 				03D1004816EC58490005A1A9 /* OutGoerService.h */,
 				03D1004916EC58490005A1A9 /* OutGoerService.m */,
-				03D1004516EC58300005A1A9 /* OutGoerListViewController.h */,
-				03D1004616EC58300005A1A9 /* OutGoerListViewController.m */,
+				03D1004516EC58300005A1A9 /* PostsListViewController.h */,
+				03D1004616EC58300005A1A9 /* PostsListViewController.m */,
 				03D1004B16EC5A680005A1A9 /* MainStoryboard_iPhone.storyboard */,
 				03D1002C16EC579A0005A1A9 /* AppDelegate.h */,
 				03D1002D16EC579A0005A1A9 /* AppDelegate.m */,
@@ -201,7 +201,7 @@
 			files = (
 				03D1002A16EC579A0005A1A9 /* main.m in Sources */,
 				03D1002E16EC579A0005A1A9 /* AppDelegate.m in Sources */,
-				03D1004716EC58300005A1A9 /* OutGoerListViewController.m in Sources */,
+				03D1004716EC58300005A1A9 /* PostsListViewController.m in Sources */,
 				03D1004A16EC58490005A1A9 /* OutGoerService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
