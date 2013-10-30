@@ -40,6 +40,9 @@ typedef void (^QSBusyUpdateBlock) (BOOL busy);
 
 - (void)refreshDataOnSuccess:(QSCompletionBlock)completion;
 
+- (void)refreshDataOnSuccess:(QSCompletionBlock)completion
+               withPredicate:(NSPredicate *)predicate;
+
 - (void)addItem:(NSDictionary *)item
      completion:(QSCompletionWithIndexBlock)completion;
 

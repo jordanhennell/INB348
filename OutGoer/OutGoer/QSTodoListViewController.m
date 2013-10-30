@@ -78,13 +78,18 @@
     if (self.useRefreshControl == YES) {
         [self.refreshControl beginRefreshing];
     }
+    
+    // Create a predicate that finds items where complete is false
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"complete == NO"];
+    
     [self.todoService refreshDataOnSuccess:^
     {
         if (self.useRefreshControl == YES) {
             [self.refreshControl endRefreshing];
         }
         [self.tableView reloadData];
-    }];
+    }
+                             withPredicate:predicate];
 }
 
 

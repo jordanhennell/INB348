@@ -73,6 +73,9 @@
     return self;
 }
 
+/**
+ * get all data from table
+ */
 - (void)refreshDataOnSuccess:(QSCompletionBlock)completion
 {
     // Query the table and update the items property with the results from the service
@@ -88,6 +91,25 @@
     
 }
 
+/** 
+ * get data from table based on predicate: filters results
+ */
+- (void)refreshDataOnSuccess:(QSCompletionBlock)completion withPredicate:(NSPredicate *)predicate
+{
+    // Query the table and update the items property with the results from the service
+    [self.table readWithPredicate:predicate completion:^(NSArray *results, NSInteger totalCount, NSError *error)
+     {
+         [self logErrorIfNotNil:error];
+         
+         items = [results mutableCopy];
+         
+         // Let the caller know that we finished
+         completion();
+     }];
+    
+}
+
+
 -(void)addItem:(NSDictionary *)item completion:(QSCompletionWithIndexBlock)completion
 {
     // Insert the item into the TodoItem table and add to the items array on completion
@@ -102,6 +124,7 @@
         completion(index);
     }];
 }
+
 
 -(void)completeItem:(NSDictionary *)item completion:(QSCompletionWithIndexBlock)completion
 {
