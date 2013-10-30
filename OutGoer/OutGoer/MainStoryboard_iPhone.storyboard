@@ -116,14 +116,14 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Wku-86-RQe">
-                                <rect key="frame" x="20" y="199" width="280" height="127"/>
+                                <rect key="frame" x="20" y="205" width="280" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fas-5R-t1W">
-                                <rect key="frame" x="175" y="390" width="125" height="50"/>
+                                <rect key="frame" x="175" y="401" width="125" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -134,9 +134,12 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addPostToTable:" destination="bsR-JH-smu" eventType="touchUpInside" id="oOG-d2-fRv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yUc-c2-Qcx">
-                                <rect key="frame" x="20" y="390" width="125" height="50"/>
+                                <rect key="frame" x="20" y="401" width="125" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -148,14 +151,93 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yQb-0q-g9f">
+                                <rect key="frame" x="20" y="329" width="71" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Change">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTopicPicker:" destination="bsR-JH-smu" eventType="touchUpInside" id="vFF-7o-UyK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="No Topic Selected" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pWf-1T-V5u">
+                                <rect key="frame" x="99" y="333" width="155" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="3Rt-xg-n76">
+                                <rect key="frame" x="0.0" y="362" width="320" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="All Fields Must Be Filled In!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ewR-PT-XCd">
+                                        <rect key="frame" x="20" y="5" width="280" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.72941176470000002" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="CQ9-RC-vK7">
+                                <rect key="frame" x="0.0" y="0.0" width="326" height="460"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" id="XZv-de-ETg">
+                                        <rect key="frame" x="0.0" y="103" width="320" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="bsR-JH-smu" id="tH0-on-s2v"/>
+                                        </connections>
+                                    </pickerView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Choose A Topic:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xo3-oH-uWz">
+                                        <rect key="frame" x="6" y="71" width="168" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xq4-JI-T3Z">
+                                        <rect key="frame" x="82" y="327" width="157" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Choose Topic">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeTopicPicker:" destination="bsR-JH-smu" eventType="touchUpInside" id="Pgc-ac-nLZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="cancelButton" destination="yUc-c2-Qcx" id="rGh-39-hXj"/>
+                        <outlet property="changeTopicButton" destination="yQb-0q-g9f" id="hlc-cr-49T"/>
+                        <outlet property="chooseTopicButton" destination="xq4-JI-T3Z" id="nHC-ey-c1I"/>
                         <outlet property="createButton" destination="fas-5R-t1W" id="hRm-o8-aEh"/>
                         <outlet property="descriptionText" destination="Wku-86-RQe" id="7Hl-Nx-Y87"/>
+                        <outlet property="errorView" destination="3Rt-xg-n76" id="EzF-ga-w8E"/>
+                        <outlet property="pickerView" destination="CQ9-RC-vK7" id="Hab-kz-r5t"/>
                         <outlet property="questionText" destination="bLW-fi-iBb" id="p4n-vw-O4N"/>
+                        <outlet property="topicChosen" destination="pWf-1T-V5u" id="jRy-iG-fgB"/>
+                        <outlet property="topicPicker" destination="XZv-de-ETg" id="9ih-jd-uu8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cy2-Bx-f7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -250,9 +332,15 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CreatePostViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="cancelButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="changeTopicButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="chooseTopicButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="createButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="descriptionText" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="errorView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="pickerView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="questionText" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="topicChosen" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="topicPicker" candidateClass="UIPickerView"/>
             </relationships>
         </class>
         <class className="PostsListViewController" superclassName="UITableViewController">

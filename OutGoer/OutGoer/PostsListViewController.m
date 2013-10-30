@@ -62,7 +62,7 @@
  */
 - (void) setUpService: (NSString*)tableName
 {
-    // Create the todoService - this creates the Mobile Service client inside the wrapped service
+    // Create the OutGoerService - this creates the Mobile Service client inside the wrapped service
     self.outGoerService = [OutGoerService customService:tableName];
     
     // Set the busy method
