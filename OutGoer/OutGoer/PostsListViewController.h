@@ -21,8 +21,10 @@
 
 @interface PostsListViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView    *activityIndicator;
+@property (weak, nonatomic)     IBOutlet UIActivityIndicatorView    *activityIndicator;
 
-@property (strong, nonatomic) IBOutlet UILabel *currentTopic;
+@property (strong, nonatomic)   IBOutlet UILabel                    *currentTopic;
+
+@property (strong, nonatomic)            NSString                   *selectedPost;
 
 @end

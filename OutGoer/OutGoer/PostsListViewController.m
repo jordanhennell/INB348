@@ -20,6 +20,8 @@
 #import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 #import "PostsListViewController.h"
 #import "OutGoerService.h"
+#import "CurrentPostViewController.h"
+#import "CurrentPost.h"
 
 
 #pragma mark * Private Interface
@@ -113,42 +115,29 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
  forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Find item that was commited for editing (completed)
+    // Find item that was commited for editing (selected)
     NSDictionary *item = [self.outGoerService.items objectAtIndex:indexPath.row];
+    CurrentPost *currentPost = [CurrentPost storePost];
+    currentPost.currentPost = [item objectForKey:@"id"];
     
-    // Change the appearance to look greyed out until we remove the item
-    UILabel *label = (UILabel *)[[tableView cellForRowAtIndexPath:indexPath] viewWithTag:1];
-    label.textColor = [UIColor grayColor];
+    // find currentPostViewController, then show, then update
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+    CurrentPostViewController *currentPostViewController = [storyboard instantiateViewControllerWithIdentifier:@"currentViewPostController"];
+    currentPostViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:currentPostViewController animated:YES completion:NULL];
     
-    // Ask the todoService to set the item's complete value to YES, and remove the row if successful
-    [self.outGoerService completeItem:item completion:^(NSUInteger index)
-    {  
-        // Remove the row from the UITableView
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
-        [self.tableView deleteRowsAtIndexPaths:@[ indexPath ]
-                              withRowAnimation:UITableViewRowAnimationTop];
-    }];
+    
 }
 
 -(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Find the item that is about to be edited
-    NSDictionary *item = [self.outGoerService.items objectAtIndex:indexPath.row];
-    
-    // If the item is complete, then this is just pending upload. Editing is not allowed
-    if ([[item objectForKey:@"complete"] boolValue])
-    {
-        return UITableViewCellEditingStyleNone;
-    }
-    
-    // Otherwise, allow the delete button to appear
     return UITableViewCellEditingStyleDelete;
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Customize the Delete button to say "complete"
-    return @"delete";
+    return @"view";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -160,13 +149,14 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    // Set the label on the cell and make sure the label color is black (in case this cell
-    // has been reused and was previously greyed out
-    UILabel *label = (UILabel *)[cell viewWithTag:1];
-    label.textColor = [UIColor blackColor];
+    // Set the label and subtitle of the cell based upon the question and description of the table entry
+    UILabel *question = (UILabel *)[cell viewWithTag:1];
+    UILabel *description = (UILabel *)[cell viewWithTag:2];
+    question.textColor = [UIColor whiteColor];
+    description.textColor = [UIColor grayColor];
     NSDictionary *item = [self.outGoerService.items objectAtIndex:indexPath.row];
-    label.text = [item objectForKey:@"Topic"];
-    
+    question.text = [item objectForKey:@"Question"];
+    description.text = [item objectForKey:@"Description"];
     return cell;
 }
 

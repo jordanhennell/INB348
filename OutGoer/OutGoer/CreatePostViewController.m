@@ -2,9 +2,9 @@
 //  CreatePostViewController.m
 //  OutGoer
 //
-//  Created by Jordan on 30/10/13.
-//  Copyright (c) 2013 QUT. All rights reserved.
-//
+// ============================================================================
+// Modified by Jordan Hennell & Braydon Cohn For INB348 - QUT
+// ============================================================================
 
 #import "CreatePostViewController.h"
 #import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
@@ -183,7 +183,8 @@
         // create item to add to table
         NSDictionary *item = @{ @"Question"     : self.questionText.text,
                                 @"Description"  : self.descriptionText.text,
-                                @"Topic"        : self.topicChosen.text};
+                                @"Topic"        : self.topicChosen.text,
+                                @"Date"         : [[NSDate date] descriptionWithLocale:[NSLocale currentLocale]]};
         
         
         // add item to table on Azure, as well as table view
