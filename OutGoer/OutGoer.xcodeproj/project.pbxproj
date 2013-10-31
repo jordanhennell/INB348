@@ -17,10 +17,6 @@
 		03D1004A16EC58490005A1A9 /* OutGoerService.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D1004916EC58490005A1A9 /* OutGoerService.m */; };
 		03D1004D16EC5A680005A1A9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D1004B16EC5A680005A1A9 /* MainStoryboard_iPhone.storyboard */; };
 		03D1006016EC63620005A1A9 /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D1005F16EC63620005A1A9 /* WindowsAzureMobileServices.framework */; };
-		03D1006516ED41D20005A1A9 /* connected57.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D1006116ED41D20005A1A9 /* connected57.png */; };
-		03D1006616ED41D20005A1A9 /* connected72.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D1006216ED41D20005A1A9 /* connected72.png */; };
-		03D1006716ED41D20005A1A9 /* connected114.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D1006316ED41D20005A1A9 /* connected114.png */; };
-		03D1006816ED41D20005A1A9 /* connected144.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D1006416ED41D20005A1A9 /* connected144.png */; };
 		172235F9182152A200BA128A /* CreatePost.png in Resources */ = {isa = PBXBuildFile; fileRef = 172235F5182152A200BA128A /* CreatePost.png */; };
 		172235FA182152A200BA128A /* ButtonTransparentBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 172235F6182152A200BA128A /* ButtonTransparentBlack.png */; };
 		172235FB182152A200BA128A /* ButtonTransparentRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 172235F7182152A200BA128A /* ButtonTransparentRed.png */; };
@@ -31,6 +27,10 @@
 		17665907182231EE0093DDC0 /* CurrentPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 17665906182231EE0093DDC0 /* CurrentPost.m */; };
 		17665909182241050093DDC0 /* ViewPost.png in Resources */ = {isa = PBXBuildFile; fileRef = 17665908182241050093DDC0 /* ViewPost.png */; };
 		1766590C18224A410093DDC0 /* CurrentPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1766590B18224A410093DDC0 /* CurrentPostViewController.m */; };
+		17665911182269A40093DDC0 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 1766590F182269A40093DDC0 /* icon57.png */; };
+		17665912182269A40093DDC0 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 17665910182269A40093DDC0 /* icon114.png */; };
+		17665914182269D00093DDC0 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 17665913182269D00093DDC0 /* icon57.png */; };
+		1766591618226A3F0093DDC0 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 1766591518226A3F0093DDC0 /* icon114.png */; };
 		17802E34181FCE1B00C2D101 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17802E31181FCE1A00C2D101 /* Default-568h@2x.png */; };
 		17802E35181FCE1B00C2D101 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 17802E32181FCE1A00C2D101 /* Default.png */; };
 		17802E36181FCE1B00C2D101 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17802E33181FCE1B00C2D101 /* Default@2x.png */; };
@@ -55,10 +55,6 @@
 		03D1004916EC58490005A1A9 /* OutGoerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutGoerService.m; sourceTree = "<group>"; };
 		03D1004B16EC5A680005A1A9 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		03D1005F16EC63620005A1A9 /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
-		03D1006116ED41D20005A1A9 /* connected57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected57.png; sourceTree = "<group>"; };
-		03D1006216ED41D20005A1A9 /* connected72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected72.png; sourceTree = "<group>"; };
-		03D1006316ED41D20005A1A9 /* connected114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected114.png; sourceTree = "<group>"; };
-		03D1006416ED41D20005A1A9 /* connected144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected144.png; sourceTree = "<group>"; };
 		172235F5182152A200BA128A /* CreatePost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreatePost.png; sourceTree = "<group>"; };
 		172235F6182152A200BA128A /* ButtonTransparentBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonTransparentBlack.png; sourceTree = "<group>"; };
 		172235F7182152A200BA128A /* ButtonTransparentRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonTransparentRed.png; sourceTree = "<group>"; };
@@ -71,6 +67,10 @@
 		17665908182241050093DDC0 /* ViewPost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ViewPost.png; sourceTree = "<group>"; };
 		1766590A18224A410093DDC0 /* CurrentPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrentPostViewController.h; path = ../CurrentPostViewController.h; sourceTree = "<group>"; };
 		1766590B18224A410093DDC0 /* CurrentPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrentPostViewController.m; path = ../CurrentPostViewController.m; sourceTree = "<group>"; };
+		1766590F182269A40093DDC0 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
+		17665910182269A40093DDC0 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
+		17665913182269D00093DDC0 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
+		1766591518226A3F0093DDC0 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
 		17802E31181FCE1A00C2D101 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		17802E32181FCE1A00C2D101 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		17802E33181FCE1B00C2D101 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -97,6 +97,8 @@
 		03D1001116EC579A0005A1A9 = {
 			isa = PBXGroup;
 			children = (
+				1766591518226A3F0093DDC0 /* icon114.png */,
+				17665913182269D00093DDC0 /* icon57.png */,
 				03D1002316EC579A0005A1A9 /* OutGoer */,
 				03D1001C16EC579A0005A1A9 /* Frameworks */,
 				03D1001B16EC579A0005A1A9 /* Products */,
@@ -158,6 +160,8 @@
 		1721EBCE1820EEEF00C4C793 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1766590F182269A40093DDC0 /* icon57.png */,
+				17665910182269A40093DDC0 /* icon114.png */,
 				17665908182241050093DDC0 /* ViewPost.png */,
 				176658F81821BC5F0093DDC0 /* ButtonSolidBlack.png */,
 				176658F91821BC5F0093DDC0 /* ButtonSolidRed.png */,
@@ -166,10 +170,6 @@
 				172235F6182152A200BA128A /* ButtonTransparentBlack.png */,
 				172235F7182152A200BA128A /* ButtonTransparentRed.png */,
 				172235F8182152A200BA128A /* ButtonTransparentWhite.png */,
-				03D1006416ED41D20005A1A9 /* connected144.png */,
-				03D1006316ED41D20005A1A9 /* connected114.png */,
-				03D1006216ED41D20005A1A9 /* connected72.png */,
-				03D1006116ED41D20005A1A9 /* connected57.png */,
 				17802E32181FCE1A00C2D101 /* Default.png */,
 				17802E33181FCE1B00C2D101 /* Default@2x.png */,
 				17B9CA541820ED34004F832A /* Background.png */,
@@ -232,10 +232,6 @@
 			files = (
 				03D1002816EC579A0005A1A9 /* InfoPlist.strings in Resources */,
 				03D1004D16EC5A680005A1A9 /* MainStoryboard_iPhone.storyboard in Resources */,
-				03D1006516ED41D20005A1A9 /* connected57.png in Resources */,
-				03D1006616ED41D20005A1A9 /* connected72.png in Resources */,
-				03D1006716ED41D20005A1A9 /* connected114.png in Resources */,
-				03D1006816ED41D20005A1A9 /* connected144.png in Resources */,
 				17802E34181FCE1B00C2D101 /* Default-568h@2x.png in Resources */,
 				17802E35181FCE1B00C2D101 /* Default.png in Resources */,
 				17802E36181FCE1B00C2D101 /* Default@2x.png in Resources */,
@@ -248,6 +244,10 @@
 				176658FC1821BC5F0093DDC0 /* ButtonSolidRed.png in Resources */,
 				176658FD1821BC5F0093DDC0 /* ButtonSolidWhite.png in Resources */,
 				17665909182241050093DDC0 /* ViewPost.png in Resources */,
+				17665911182269A40093DDC0 /* icon57.png in Resources */,
+				17665912182269A40093DDC0 /* icon114.png in Resources */,
+				17665914182269D00093DDC0 /* icon57.png in Resources */,
+				1766591618226A3F0093DDC0 /* icon114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

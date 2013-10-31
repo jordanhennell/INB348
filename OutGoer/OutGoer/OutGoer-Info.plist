@@ -18,6 +18,8 @@
 				<string>connected114.png</string>
 				<string>connected72.png</string>
 				<string>connected144.png</string>
+				<string>icon57.png</string>
+				<string>icon114.png</string>
 			</array>
 		</dict>
 	</dict>
@@ -48,8 +50,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
