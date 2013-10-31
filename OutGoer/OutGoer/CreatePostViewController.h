@@ -2,9 +2,9 @@
 //  CreatePostViewController.h
 //  OutGoer
 //
-//  Created by Jordan on 30/10/13.
-//  Copyright (c) 2013 QUT. All rights reserved.
-//
+// ============================================================================
+// Created by Jordan Hennell & Braydon Cohn For INB348 - QUT
+// ============================================================================
 
 #import <UIKit/UIKit.h>
 
