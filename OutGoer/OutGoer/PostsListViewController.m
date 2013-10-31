@@ -43,8 +43,8 @@
 @implementation PostsListViewController
 
 @synthesize outGoerService;
-@synthesize itemText;
 @synthesize activityIndicator;
+@synthesize currentTopic;
 
 
 #pragma mark * UIView methods
@@ -93,14 +93,17 @@
         [self.refreshControl beginRefreshing];
     }
     
+    
     // get all items in table, no predicate
     [self.outGoerService refreshDataOnSuccess:^
     {
-        if (self.useRefreshControl == YES) {
+        if (self.useRefreshControl == YES)
+        {
             [self.refreshControl endRefreshing];
         }
         [self.tableView reloadData];
-    }];
+    }
+                                withPredicate:[NSPredicate predicateWithFormat:@"Topic == %@", self.currentTopic.text]];
 }
 
 
@@ -162,7 +165,7 @@
     UILabel *label = (UILabel *)[cell viewWithTag:1];
     label.textColor = [UIColor blackColor];
     NSDictionary *item = [self.outGoerService.items objectAtIndex:indexPath.row];
-    label.text = [item objectForKey:@"text"];
+    label.text = [item objectForKey:@"Topic"];
     
     return cell;
 }
@@ -187,39 +190,6 @@
 {
     [textField resignFirstResponder];
     return YES;
-}
-
-
-#pragma mark * UI Actions
-
-
-/**
- * adds item to table based on text in text field
- */
-- (IBAction)onAdd:(id)sender
-{
-    // check itemText is not empty
-    if (itemText.text.length  == 0)
-    {
-        return;
-    }
-    
-    // create object from itemText
-    NSDictionary *item = @{ @"text" : itemText.text};
-    
-    // store current table view
-    UITableView *view = self.tableView;
-    
-    // add item to table on Azure, as well as table view
-    [self.outGoerService addItem:item completion:^(NSUInteger index)
-    {
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
-        [view insertRowsAtIndexPaths:@[ indexPath ]
-                    withRowAnimation:UITableViewRowAnimationTop];
-    }];
-    
-    // reset text in field
-    itemText.text = @"";
 }
 
 
@@ -250,6 +220,7 @@
 
 - (void)viewDidUnload {
     [self setTextView:nil];
+    [self setCurrentTopic:nil];
     [super viewDidUnload];
 }
 @end

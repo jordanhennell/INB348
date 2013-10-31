@@ -21,9 +21,8 @@
 
 @interface PostsListViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UITextField                *itemText;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView    *activityIndicator;
 
-- (IBAction)onAdd:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *currentTopic;
 
 @end
