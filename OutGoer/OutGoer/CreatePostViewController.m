@@ -9,6 +9,7 @@
 #import "CreatePostViewController.h"
 #import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 #import "OutGoerService.h"
+#import "PostsListViewController.h"
 
 @interface CreatePostViewController ()
 
@@ -92,7 +93,7 @@
                                       forState:UIControlStateNormal];
     [self.changeTopicButton setBackgroundImage:whiteTransparentImage
                                       forState:UIControlStateHighlighted];
-    [self.changeTopicButton setTitleColor: [UIColor colorWithRed:0 green:0 blue:0 alpha:1]
+    [self.changeTopicButton setTitleColor: [UIColor blackColor]
                                  forState:UIControlStateHighlighted];
     
     [self.chooseTopicButton setBackgroundImage:whiteSolidImage
@@ -192,6 +193,12 @@
          {
              // show another view that says successfully added, after a few seconds redirect to the page for that topic
          }];
+        
+        // find ViewController, then show
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+        PostsListViewController *new = [storyboard instantiateViewControllerWithIdentifier:@"nightlife"];
+        new.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        [self presentViewController:new animated:YES completion:NULL];
         
     }
 }

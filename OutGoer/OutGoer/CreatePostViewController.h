@@ -10,9 +10,9 @@
 
 @interface CreatePostViewController : UIViewController <UITextViewDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
 
-@property (strong, nonatomic) IBOutlet UIView *pickerView;
+@property (strong, nonatomic) IBOutlet UIView       *pickerView;
 
-@property (strong, nonatomic) IBOutlet UIView *errorView;
+@property (strong, nonatomic) IBOutlet UIView       *errorView;
 
 @property (strong, nonatomic) IBOutlet UITextView   *questionText;
 
@@ -24,7 +24,7 @@
 
 @property (strong, nonatomic) IBOutlet UIButton     *changeTopicButton;
 
-@property (strong, nonatomic) IBOutlet UIButton *chooseTopicButton;
+@property (strong, nonatomic) IBOutlet UIButton     *chooseTopicButton;
 
 @property (strong, nonatomic) IBOutlet UILabel      *topicChosen;
 

@@ -122,7 +122,7 @@
     
     // find currentPostViewController, then show, then update
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
-    CurrentPostViewController *currentPostViewController = [storyboard instantiateViewControllerWithIdentifier:@"currentViewPostController"];
+    CurrentPostViewController *currentPostViewController = [storyboard instantiateViewControllerWithIdentifier:@"currentPostViewController"];
     currentPostViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:currentPostViewController animated:YES completion:NULL];
     
